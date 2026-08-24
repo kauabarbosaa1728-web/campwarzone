@@ -851,4 +851,124 @@ footer .copyright {
     }
 
 }
+/* =========================
+   INSCRIÇÃO DO CAMPEONATO
+========================= */
+
+.registration-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.registration-info,
+.registration-form {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 35px;
+}
+
+.registration-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registration-info h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.registration-info > p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.payment-notice {
+    margin-top: 25px;
+    padding: 20px;
+    border-left: 3px solid var(--green);
+    background: rgba(156, 255, 0, .05);
+}
+
+.payment-notice strong {
+    color: var(--green);
+}
+
+.payment-notice p {
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.registration-form input {
+    width: 100%;
+    height: 55px;
+    padding: 0 18px;
+    background: #080a09;
+    border: 1px solid rgba(255,255,255,.12);
+    color: var(--white);
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    transition: .25s;
+}
+
+.registration-form input::placeholder {
+    color: #6f756e;
+}
+
+.registration-form input:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 2px rgba(156,255,0,.08);
+}
+
+.registration-form button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   INSCRIÇÃO MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .registration-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .registration-info,
+    .registration-form {
+        padding: 25px 20px;
+    }
+
+    .registration-info h3 {
+        font-size: 28px;
+    }
+
+    .registration-form input {
+        height: 52px;
+    }
+
+}
 
