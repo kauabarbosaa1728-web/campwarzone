@@ -747,3 +747,108 @@ footer .copyright {
     }
 
 }
+/* =========================
+   COUNTDOWN
+========================= */
+
+#countdown {
+    margin-top: 35px;
+    max-width: 600px;
+}
+
+.countdown-title {
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.countdown-box {
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(156,255,0,.18);
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.countdown-box strong {
+    display: block;
+    color: var(--white);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.countdown-box span {
+    display: block;
+    color: var(--gray);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   ACTIVE MENU
+========================= */
+
+.navbar nav a.active {
+    color: var(--green);
+}
+
+
+/* =========================
+   COUNTDOWN MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    #countdown {
+        margin-top: 30px;
+    }
+
+    .countdown-grid {
+        gap: 6px;
+    }
+
+    .countdown-box {
+        padding: 12px 5px;
+    }
+
+    .countdown-box strong {
+        font-size: 28px;
+    }
+
+    .countdown-box span {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+}
+
