@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -437,6 +438,7 @@
 
             </div>
 
+
             <div class="registration-container">
 
                 <div class="registration-info">
@@ -444,11 +446,12 @@
                     <h3>🏆 INSCREVA SUA DUPLA</h3>
 
                     <p>
-                        Preencha corretamente os dados abaixo para
-                        realizar sua inscrição no Resurgence 100.
+                        Preencha corretamente os dados dos dois jogadores
+                        abaixo para realizar sua inscrição no Resurgence 100.
                     </p>
 
                     <div class="payment-notice">
+
                         💰 <strong>PAGAMENTO DA PARTICIPAÇÃO</strong>
 
                         <p>
@@ -456,10 +459,15 @@
                             <strong>no dia do campeonato</strong>, antes
                             do início das partidas.
                         </p>
+
                     </div>
 
                 </div>
 
+
+                <!-- =========================
+                     FORMULÁRIO DE INSCRIÇÃO
+                ========================== -->
 
                 <form
                     action="https://formsubmit.co/kbvendasist@gmail.com"
@@ -467,40 +475,61 @@
                     class="registration-form"
                 >
 
-                    <input
-                        type="text"
-                        name="nome"
-                        placeholder="Nome completo"
-                        required
-                    >
+                    <!-- NOME DA DUPLA -->
 
                     <input
                         type="text"
-                        name="time"
+                        name="nome_time"
                         placeholder="Nome do time / dupla"
                         required
                     >
 
+
+                    <!-- JOGADOR 1 -->
+
                     <input
                         type="text"
-                        name="activision"
-                        placeholder="Nick da Activision"
+                        name="jogador_1_nome"
+                        placeholder="Nome completo — Jogador 1"
                         required
                     >
 
                     <input
                         type="text"
-                        name="nick_jogo"
-                        placeholder="Nick no jogo"
+                        name="jogador_1_activision"
+                        placeholder="Conta da Activision — Jogador 1"
                         required
                     >
+
+
+                    <!-- JOGADOR 2 -->
+
+                    <input
+                        type="text"
+                        name="jogador_2_nome"
+                        placeholder="Nome completo — Jogador 2"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        name="jogador_2_activision"
+                        placeholder="Conta da Activision — Jogador 2"
+                        required
+                    >
+
+
+                    <!-- TELEFONE DO CPT -->
 
                     <input
                         type="tel"
-                        name="telefone"
-                        placeholder="Telefone / WhatsApp"
+                        name="telefone_cpt"
+                        placeholder="Telefone / WhatsApp do CPT"
                         required
                     >
+
+
+                    <!-- CONFIGURAÇÕES DO FORMSUBMIT -->
 
                     <input
                         type="hidden"
@@ -519,6 +548,9 @@
                         name="_template"
                         value="table"
                     >
+
+
+                    <!-- BOTÃO -->
 
                     <button type="submit" class="btn primary">
                         CONFIRMAR INSCRIÇÃO
@@ -597,15 +629,16 @@
 
             </div>
 
-            <a href="https://chat.whatsapp.com/EACC7VWCvrJ63Jw97SlnDo"
-               class="btn whatsapp-btn"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://chat.whatsapp.com/EACC7VWCvrJ63Jw97SlnDo"
+                class="btn whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 ENTRAR NO GRUPO
             </a>
 
         </section>
-
 
     </main>
 
@@ -634,4 +667,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
