@@ -470,8 +470,6 @@
                 ========================== -->
 
                 <form
-                    action="https://formsubmit.co/kbvendasist@gmail.com"
-                    method="POST"
                     class="registration-form"
                 >
 
@@ -529,39 +527,12 @@
                     >
 
 
-                    <!-- ENVIA CÓPIA PARA O SEGUNDO E-MAIL -->
-
-                    <input
-                        type="hidden"
-                        name="_cc"
-                        value="carlosaugustod88@gmail.com"
-                    >
-
-
-                    <!-- CONFIGURAÇÕES DO FORMSUBMIT -->
-
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="🏆 Nova inscrição - Resurgence 100"
-                    >
-
-                    <input
-                        type="hidden"
-                        name="_captcha"
-                        value="false"
-                    >
-
-                    <input
-                        type="hidden"
-                        name="_template"
-                        value="table"
-                    >
-
-
                     <!-- BOTÃO -->
 
-                    <button type="submit" class="btn primary">
+                    <button
+                        type="submit"
+                        class="btn primary"
+                    >
                         CONFIRMAR INSCRIÇÃO
                     </button>
 
@@ -672,6 +643,17 @@
 
     </footer>
 
+
+    <!-- =========================
+         EMAILJS
+    ========================== -->
+
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script src="email.js"></script>
 
     <script src="script.js"></script>
 
